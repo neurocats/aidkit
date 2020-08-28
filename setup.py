@@ -22,7 +22,7 @@ setup(
                 "costs / iterations. ",
     packages=find_packages(exclude=["tests"]),
     include_package_data=True,
-    url='aidkit.ai',
+    url='https://aidkit.ai/',
     author='neurocat GmbH',
     author_email='dev@neurocat.ai',
     license='GNU AGPLv3',
