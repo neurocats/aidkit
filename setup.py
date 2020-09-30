@@ -3,14 +3,7 @@ from setuptools import setup, find_packages
 import re
 
 with open('requirements.txt') as fp:
-    INSTALL_REQUIRES = list()
-    for line in fp:
-        pattern = r'(?<=\-r\s)[\w\/.]+'
-        path = re.findall(pattern, line)[0]
-        with open(path) as f:
-            INSTALL_REQUIRES.append(f.read())
-    INSTALL_REQUIRES = "\n".join(INSTALL_REQUIRES)
-
+    INSTALL_REQUIRES = fp.read()
 
 setup(
     name='aidkit',
